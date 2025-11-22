@@ -1,12 +1,9 @@
-
-import './App.css'
+import Sidebar from "./components/Sidebar";
+import "./App.css";
+import Layout from "./components/Layout";
 
 function App() {
-
-
-  return (
-    <p>Olá Mundo</p>
-  )
+  return <Layout />;
 }
 
-export default App
+export default App;
