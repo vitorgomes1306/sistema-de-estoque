@@ -46,7 +46,7 @@ function Produtos() {
   const salvarProduto = (e) => {
     e.preventDefault()
     if(produtoEditando) {
-        setProdutos(produto.map(p = >
+        setProdutos(produtos.map(p =>
             p.id === produtoEditando.id ? { ...formData, id: p.id} : p
         ))
     } else {
