@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { createIcons, icons } from 'lucide';
+import { Camera, Monitor, CircleGauge, Gauge, ScanBarcode, ArrowLeftRight   } from 'lucide-react';
 
 function Sidebar() {
   return (
@@ -14,7 +15,7 @@ function Sidebar() {
             `list-group-item list-group-item-action ${isActive ? "active" : ""}`
           }
         >
-          <i className="bi bi-speedometer2 me-2"></i>
+         <Gauge  className="me-2"size={24} />
           Dashboard
         </NavLink>
         <NavLink
@@ -23,7 +24,7 @@ function Sidebar() {
             `list-group-item list-group-item-action ${isActive ? "active" : ""}`
           }
         >
-          <i className="bi bi-box me-2"></i>
+           <ScanBarcode  className="me-2"size={24} />
           Produtos
         </NavLink>
         <NavLink
@@ -32,7 +33,7 @@ function Sidebar() {
             `list-group-item list-group-item-action ${isActive ? "active" : ""}`
           }
         >
-          <i className="bi bi-arrow-left-right me-2"></i>
+          <ArrowLeftRight className="me-2" size={24} />
           Movimentações
         </NavLink>
       </div>
